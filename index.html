@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>One Piece</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .icons-row {
+            display: flex;
+        }
+
+        .icons-row h1 {
+            flex-grow: 20;
+            display: block;
+        }
+
+        .icon-container {
+            -ms-flex-align: center;
+        }
+
+        .icon {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+
+        .hero {
+            display: flex;
+        }
+
+        .hero-texts {
+            -ms-flex-align: start;
+        }
+
+        .hero-image {
+            -ms-flex-align: end;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-logo {
+            flex: 1;
+        }
+
+        ul {
+            flex: 3;
+            list-style: none;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>HELLO WORLD?!</h1>
+    <header>
+        <div class="header-logo">
+            Logo HERE
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-texts">
+            <h1 class="hero-title">
+                This website is awesome
+            </h1>
+            <div class="hero-subtitle">
+                This website is awesome I suppose and this is a lot of text
+                This website is awesome I suppose and this is a lot of text
+                This website is awesome I suppose and this is a lot of text
+                This website is awesome I suppose and this is a lot of text
+                This website is awesome I suppose and this is a lot of text
+            </div>
+            <button class="hero-button">A button</button>
+        </div>
+        <div class="her-image">
+            <img src="" alt="Some pic" style="width:300px;height:100px;">
+        </div>
+    </section>
+    <div class="icons-row">
+        <h1>Icons title</h1>
+        <div class="icon-container">
+            <div class="icon">
+            </div>
+            <div class="icon-subtitle">
+                Some text about box
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon">
+            </div>
+            <div class="icon-subtitle">
+                Some text about box
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon">
+            </div>
+            <div class="icon-subtitle">
+                Some text about box
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="icon">
+            </div>
+            <div class="icon-subtitle">
+                Some text about box
+            </div>
+        </div>
+    </div>
+    <div class="quotes-row">
+        <h3>
+            <i>Here is a big text in italic.
+                Here is a big text in italic.
+                Here is a big text in italic.
+                Here is a big text in italic.
+            </i>
+        </h3>
+        <b>- Texter</b>
+    </div>
+    <div class="action-row">
+        <div>
+            <h4>Call to sleep</h4>
+            <p>Sleep plz Sleep plz Sleep plz Sleep plz</p>
+        </div>
+        <div>
+            <button>SLEEP</button>
+        </div>
+    </div>
+    <footer>
+        <center>Copyright @ Strawhat Pirates</center>
+    </footer>
 </body>
+
 </html>
