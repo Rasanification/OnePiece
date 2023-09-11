@@ -16,19 +16,6 @@
         }
 
 
-        /* ICONS SECTIONS */
-        .icons-row {
-            display: flex;
-            padding:30px;
-
-        }
-
-        .icon {
-            border: 1px solid black;
-            width: 100px;
-            height: 100px;
-        }
-
 
         /* Navbar section */
         header {
@@ -73,6 +60,31 @@
             height:200px;
         }
 
+
+        /* ICONS SECTIONS */
+        .icons-section {
+            display: flex;
+            padding:30px;
+            flex-direction: column;
+            align-items:center;
+        }
+        .icons-row{
+            width:100%;
+            display:flex;
+            justify-content: space-around;
+        }
+        .icon-container{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap:10px;
+        }
+        .icon {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+
     </style>
 </head>
 
@@ -108,8 +120,9 @@
             <img src="temp-header.jpg" alt="Some pic" />
         </div>
     </section>
-    <div class="icons-row">
+    <div class="icons-section">
         <h1>Icons title</h1>
+        <div class="icons-row">
         <div class="icon-container">
             <div class="icon">
             </div>
@@ -137,6 +150,7 @@
             <div class="icon-subtitle">
                 Some text about box
             </div>
+        </div>
         </div>
     </div>
     <div class="quotes-row">
