@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Piece</title>
     <style>
+        /* GENERAL STYLING */
         * {
             box-sizing: border-box;
         }
@@ -13,17 +14,10 @@
             background-color:darkslategrey;
             color:white;
         }
+
+        /* ICONS SECTIONS */
         .icons-row {
             display: flex;
-        }
-
-        .icons-row h1 {
-            flex-grow: 20;
-            display: block;
-        }
-
-        .icon-container {
-            -ms-flex-align: center;
         }
 
         .icon {
@@ -32,18 +26,19 @@
             height: 100px;
         }
 
+        /* hero section */
         .hero {
             display: flex;
+            justify-content: center;
+        }
+        .hero-texts{
+            flex:1;
+        }
+        .hero-image{
+            flex:2;
         }
 
-        .hero-texts {
-            -ms-flex-align: start;
-        }
-
-        .hero-image {
-            -ms-flex-align: end;
-        }
-
+        /* Navbar section */
         header {
             display: flex;
             justify-content: space-between;
@@ -94,7 +89,7 @@
             </div>
             <button class="hero-button">A button</button>
         </div>
-        <div class="her-image">
+        <div class="hero-image">
             <img src="" alt="Some pic" style="width:300px;height:100px;">
         </div>
     </section>
