@@ -84,7 +84,16 @@
             width: 100px;
             height: 100px;
         }
-
+        .quotes-row{
+            display:flex;
+            align-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .quote-by{
+            display:flex;
+            justify-content: flex-end;
+        }
     </style>
 </head>
 
@@ -161,7 +170,10 @@
                 Here is a big text in italic.
             </i>
         </h3>
-        <b>- Texter</b>
+        <div class="quote-by">
+            <b>- Texter</b>
+        </div>
+        
     </div>
     <div class="action-row">
         <div>
